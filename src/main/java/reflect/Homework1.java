@@ -109,7 +109,8 @@ public class Homework1 {
     public int streamPipeline10() {
         return Arrays.stream(String.class.getDeclaredMethods())
                 .mapToInt(method -> method.getParameterCount())
-                .max().getAsInt();
+                .max()
+                .getAsInt();
     }
 
     /**
